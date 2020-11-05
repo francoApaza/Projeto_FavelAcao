@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cadastre Aqui</title>
+        <link rel="icon" href="./img/logo-removebg-preview.png">
+        <link rel="stylesheet" href="./css/style.css">
+        <link rel="stylesheet" href="./css/cadastro-residuos.css">
+    </head>
+    <body>
+        <img src="./img/logo-removebg-preview.png" width="250" alt="Logo Projeto FavelAção">
+        
+        <form action="cadastro_residuos.php" method="POST">
+            <fieldset>
+              <legend>Onde estão os resíduos?</legend>   
+            <div class="input-block">
+              <label for="endereco">Endereço</label>
+              <input type="text" id="endereco" name="res_endereco" required>
+            </div>
+            
+            <div class="input-block">
+              <label for="pontoRef">Ponto de Referência </label>
+              <input id="pontoRef" name="res_ponto_referencia" required></input>          
+            </div>  
+            
+    
+            </fieldset>
+            <fieldset>
+                
+                <h3>Quantidade de resíduos?</h3>
+                <br>
+                <!--QUANTIDADE DE RESIDUOS-->
+                <label for="qtdresiduo">
+                    <input type="radio" name="res_quantidade" value="Pouco"> Pouco <br>
+                </label>
+                <label for="">
+                     <input type="radio" name="res_quantidade" value="Médio"> Médio<br>
+                </label>
+               <label for="">
+                   <input type="radio" name="res_quantidade" value="Muito"> Muito
+                 </label>
+                
+                <br><br>    
+                <h3>Há presença de insetos no local?</h3><br>
+                <!--PRESENÇA DE INSETOS-->
+                 <label for="">
+                     <input type="radio" name="res_presenca_insetos" value="Sim"> Sim <br>
+                </label>
+                
+                <label for="">
+                    <input type="radio" name="res_presenca_insetos" value="Não"> Não <br> 
+                </label>
+                
+                <br><br> 
+                <!--SE TEM INSETOS QUAIS SAO ESSES INSETOS-->
+                <h3>Se sim, quais?</h3> <br>
+                <label>
+                    <input id="res_quais_insetos" type="checkbox" name="res_quais_insetos[]" value="Moscas"> Moscas<br>
+                </label>
+
+               <label for=""> 
+                    <input id="res_quais_insetos" type="checkbox" name="res_quais_insetos[]" value="Baratas"> Baratas<br>
+                </label>
+
+              <label for="">
+                   <input id="res_quais_insetos" type="checkbox" name="res_quais_insetos[]" value="Ratos"> Ratos <br>
+                </label>
+
+               <label for=""> 
+                   <input id="res_quais_insetos" type="checkbox" name="res_quais_insetos[]" value="Larvas"> Larvas <br>
+                </label>
+               
+                    <br><br>  
+                <!--ACRESCENTA INFORMAÇOES ADICIONAIS-->
+                <div class="input-block">
+                    <label for="informacao">Gostaria de acrescentar informações adicionais: </label>
+                    <textarea id="informacao" name="res_informacoes"></textarea>  
+
+      
+      
+              </fieldset>
+
+              <button type="submit"> Confirmar</button>        
+           </div>
+        </form>
+     
+        <a href="locais.html" title="Voltar para página de Locais de Resíduos.">
+            <img src="./img/arroleft.svg" alt="Ir para o mapa" />
+          </a>
+      
+             
+    </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>faca seu cadastro</title>
+    
+    <link rel="stylesheet" href="./css/global.css">
+    <link rel="stylesheet" href="./css/cadastro.css">
+
+    <link rel="icon" href="./img/logo.png"/>
+
+</head>
+<body>
+    <main>
+        <div class="card">
+            <h1>Cadastro</h1>
+            <form name="###" action="cadastro.php" method="POST">
+
+                <label>Nome:</label>
+                    <input type="text" name="nome" maxlength="25"  minlength="5" pattern="[a-z-A-Z\s]+$" placeholder="Digite seu nome aqui:" required/>
+                
+                <label>Data de nascimento:</label>
+                    <input type="date" name="data_nascimento" maxlength="10" placeholder="Data de nascimento"required/> 
+                
+                <label>Endereço:</label>
+                    <input type="text" name="endereco" maxlength="50" placeholder="Digite seu endereço"required/>
+                
+                <label>Complemento:</label>
+                    <input type="text" name="complemento" maxlength="30"  placeholder="Complemento:"/>
+                
+                <label>E-mail</label>
+                    <input type="email" name="email" maxlength="50" placeholder="Digite seu E-mail"required/>
+                    
+                <label>Telefone:</label>
+                    <input type="tel" name="telefone" placeholder="( ) xxxxx-xxxx"required/>
+                    <!-- <input type="tel" name="###" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx) 9xxxx-xxxx"> -->
+
+                <label>Senha:</label>
+                    <input type="password" name="senha" minlength="8" placeholder="Digite uma senha"required/>
+
+                <label>Confirme:</label>
+                    <input type="password" name="confirmesenha" placeholder="confirme a senha"required/>
+                    
+                <button type="submit" name="btn_cadastra"><b>Cadastre-se</b></button>
+            </form>
+            <a href="./index.html">Ja tem cadastro? Realize o login clicando <b>aqui!</b></a>
+        </div>
+    </main>
+    <footer class="rodape">
+        <p>&copy; Nome do projeto</p>
+    </footer>
+   
+</body>
+</html>
+

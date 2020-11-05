@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@700&display=swap');
+
+#pagina-cadastro{
+    width: 100vw;
+    height: 100vh;
+
+    display: flex;
+    margin-top: 0;
+}
+
+aside{
+    width: clamp(34rem, 25vw, 44rem);;
+    background:#80ED99; 
+    padding: clamp(3rem, 5vw, 8rem);
+    height: 100%;
+
+    display: flex;
+    flex-direction: column; /*Coluna -> Um abaixo do outro*/
+    justify-content:space-between; /*Espaço entre eles*/
+}
+
+aside h2{
+    margin-top: 3.4rem;
+
+    font: 800 34px'IBM PLex Sans', sans-serif;
+    color: #fff
+}
+
+aside p{
+    margin-top: 2.4rem;
+
+    font: 400 20px 'IBM PLex Sans', sans-serif;
+    color: #fff
+}
+
+aside footer p{
+   margin-top: .8rem;
+}
+aside .voluntario {
+    margin-top: 8.4rem;
+}
+
+#mapid {
+    width: 100%;
+    height: 100%;
+
+
+    animation-delay: 200ms;
+}
+
+/* Button*/
+a.create-residuos{
+    position: absolute;
+    right: 3rem;
+    bottom: 4rem; 
+
+    z-index: 1500;
+
+    width: 40px;
+    height: 40px;
+    background: #15c3d6;
+    border: 0;
+    border-radius: 2rem;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    transition: background-color .2s;
+}
+
+a.pagina-cadastro:hover {
+    background: #48CAE4;
+}
+
+.leaflet-popup-content-wrapper{
+    background:white;  
+    border-radius: 20px;
+}
+
+.leaflet-popup-content{
+    color: #0089a5; 
+    font-size: 1rem;
+    font: 800 20px 'IBM PLex Sans', sans-serif;       
+    margin: .8rem 1.2rem;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.leaflet-popup-content a{
+    
+    width: 34px;
+    height: 34px;
+    background:#48CAE4;
+    margin: 12px 20px;
+  
+    border-radius: 20px;
+
+    display: flex;
+    align-items:center;
+    justify-content:space-between;
+
+    transition: background-color .2s;
+}
+
+.leaflet-popup-content a:hover{
+    background:#17d6eb;
+}
+
+.leaflet-popup-tip{
+    display:none;
+}
+
+.leaflet-container {
+    font: 24px;
+    
+    z-index: 1500;
+}
